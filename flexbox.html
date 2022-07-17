@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Flexbox</title>
+    <style>
+        .container {
+            border: 3px dotted deeppink;
+            display: flex;
+            justify-content: stretch;
+            /* justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;*/
+            height: 400px;
+        }
+
+        .box {
+            /*height: 50px;*/
+            width: 100px;
+            border: 3px dotted lightsalmon;
+        }
+
+        #box-2 {
+            flex-grow: 1;
+        }
+
+        .container-paragraph {
+            display: flex;
+            justify-content: center;
+        }
+
+        .box-one {
+            margin: .5%;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            padding: 15px;
+            height: 320px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 40px rgb(174, 173, 173);
+            text-align: justify;
+        }
+
+        .box-one img {
+            height: 180px;
+            width: 300px;
+            margin-top: 5px;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box-1</div>
+        <div id="box-2" class="box">Box-2</div>
+
+    </div>
+
+    <div class="container-paragraph">
+        <div class="box-one">
+            <img src="food/Project Cover8.png" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui temporibus cupiditate tempora
+                exercitationem corrupti quaerat adipisci maxime dolorem ipsum, repudiandae fugiat, porro nam suscipit
+                quod facere aliquam minima unde quas!</p>
+        </div>
+        <div class="box-one">
+            <img src="food/Project Cover5.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non omnis officiis nam culpa, sequi illum,
+                distinctio doloremque harum earum enim architecto at obcaecati corrupti accusamus dolor laborum ut
+                debitis. Sint?</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
